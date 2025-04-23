@@ -1,2 +1,4 @@
-com/auth/app/App.class
-com/auth/app/AuthApp.class
+com\auth\app\AuthApp.class
+com\auth\app\model\Usuario.class
+com\auth\app\App.class
+com\auth\app\model\Persona.class

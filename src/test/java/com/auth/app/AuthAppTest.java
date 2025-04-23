@@ -31,11 +31,11 @@ public class AuthAppTest extends TestCase
         String username = "usuario_test";
         String password = "clave_test";
         
-        // Comentar esta línea si no existe el usuario en la base de datos
-        // assertTrue(AuthApp.autenticar(username, password));
+        // Descomentar esta línea para probar la autenticación real
+        assertTrue(AuthApp.autenticar(username, password));
         
-        // Para evitar fallos en pruebas automáticas sin BD configurada
-        assertTrue(true);
+        // Comentar esta línea si descomentas la anterior
+        // assertTrue(true);
     }
     
     /**
