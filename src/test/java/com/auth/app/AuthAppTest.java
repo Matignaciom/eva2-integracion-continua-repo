@@ -7,7 +7,7 @@ import com.auth.app.model.Usuario;
 import com.auth.app.model.Persona;
 
 /**
- * Pruebas unitarias para la clase AuthApp
+ * Pruebas para AuthApp
  */
 public class AuthAppTest extends TestCase
 {
@@ -22,31 +22,29 @@ public class AuthAppTest extends TestCase
     }
 
     /**
-     * Prueba de autenticación con credenciales válidas
-     * Nota: Esta prueba requiere que exista un usuario en la base de datos
+     * Prueba con credenciales válidas
      */
     public void testAutenticacionValida()
     {
-        // Asumiendo que existe este usuario en la base de datos
+        // Usuario de prueba
         String username = "usuario_test";
         String password = "clave_test";
         
-        // Descomentar esta línea para probar la autenticación real
+        // Descomentar para prueba real
         assertTrue(AuthApp.autenticar(username, password));
         
-        // Comentar esta línea si descomentas la anterior
+        // Alternativa
         // assertTrue(true);
     }
     
     /**
-     * Prueba de autenticación con credenciales inválidas
+     * Prueba con credenciales inválidas
      */
     public void testAutenticacionInvalida()
     {
         String username = "usuario_inexistente";
         String password = "clave_incorrecta";
         
-        // Esta prueba debería funcionar incluso sin BD configurada
         assertFalse(AuthApp.autenticar(username, password));
     }
 }
