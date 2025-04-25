@@ -3,6 +3,8 @@ package com.auth.app;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
+import com.auth.app.model.Usuario;
+import com.auth.app.model.Persona;
 
 /**
  * Pruebas para AuthApp
