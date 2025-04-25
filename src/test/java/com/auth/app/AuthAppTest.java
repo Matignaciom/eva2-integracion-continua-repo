@@ -3,8 +3,6 @@ package com.auth.app;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import com.auth.app.model.Usuario;
-import com.auth.app.model.Persona;
 
 /**
  * Pruebas para AuthApp
@@ -44,6 +42,17 @@ public class AuthAppTest extends TestCase
     {
         String username = "usuario_inexistente";
         String password = "clave_incorrecta";
+        
+        assertFalse(AuthApp.autenticar(username, password));
+    }
+    
+    /**
+     * Prueba con valores vacíos
+     */
+    public void testAutenticacionValoresVacios()
+    {
+        String username = "";
+        String password = "";
         
         assertFalse(AuthApp.autenticar(username, password));
     }
