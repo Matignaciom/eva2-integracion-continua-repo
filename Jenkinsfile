@@ -3,8 +3,8 @@ pipeline {
     
     tools {
         // Definir la instalación de Maven a utilizar
-        maven 'Maven 3.9.9'
-        jdk 'JDK 17'
+        maven 'M3'
+        jdk 'JDK'
     }
     
     stages {
